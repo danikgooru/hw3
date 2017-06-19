@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="shortcut icon" href="http://htmlbook.ru/themes/hb/img/note.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 align="center">Social test</h1>
+
+    <form action="https://formspree.io/danulo.gooru@gmail.com" method="POST" Align="center">
+        <label>   Name: <br>
+       <input type="text" name="Your-name" placeholder="your name"> 
+       </label> <br>
+        
+        <label> Age: <br>
+<input type="number" name="Amount_of_currency_to_donate" min="1" required>
+    </label><br>
+
+        <label id="email"> 
+        Your Email:<br>
+        <input type="text" name="Your-email" placeholder="your email"> 
+        </label>
+        <br><br>
+<hr>
+        
+        <p> Your gender:</p>
+        <label>Men
+        <input type="radio" name="answer" value="answer-men"></label><br>
+        <label>Women
+        <input type="radio" name="answer" value="answer-women"></label><br>
+
+
+        <p>What is your favorite meal?</p>
+        <label>
+        
+                <select name="question-meal" id="meal-a" onclick="other_option" required>
+                    <option value="">Select</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="meat">Meat</option>
+                    <option value="Other">Your option</option>
+                </select>
+            </label>
+
+        <p>What do you like to drink?</p>
+        <label>
+            
+                <select name="question-drink" id="drink-a" onclick="other_option" required>
+                    <option value="">Select</option>
+                    <option value="vegetables">Alkohosl</option>
+                    <option value="fruits">Water</option>
+                    <option value="meat">Milk</option>
+                    <option value="Other">Your option</option>
+                </select>
+            </label>
+        <br>
+        <br>
+        <label>Write about yourself:<br>
+        <textarea placeholder="Enter here..." rows="5" cols="50" name="Write about yourself:"></textarea>
+   </label>
+
+        <br>
+        <p>Describe your emotional state:</p>
+        <label>
+                                        <input type="checkbox" name="joyful;" value="on">joyful;
+                                
+                                    </label>
+        <br>
+        <label>
+                                        <input type="checkbox" name="happiness" value="on">happiness;
+                                
+                                    </label>
+        <br>
+          <label>
+                                        <input type="checkbox" name="hatred" value="on">hatred;
+                                
+                                    </label>
+        <br>  <label>
+                                        <input type="checkbox" name="satisfied" value="on">satisfied;
+                                
+                                    </label>
+        <br>
+                                      
+
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset"> 
+    </form>
+</body>
+
+</html>
